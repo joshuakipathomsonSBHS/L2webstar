@@ -1,0 +1,18 @@
+ html {
+    background-image: linear-gradient(to right, green, blue);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+    color: white;
+    
+}
+
+.links{
+text-decoration: none;
+    grid-column: 2/3;
+    justify-self: end; 
+}
