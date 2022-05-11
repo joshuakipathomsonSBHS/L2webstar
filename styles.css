@@ -1,18 +1,82 @@
  html {
-    background-image: linear-gradient(to right, green, blue);
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
 body {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 5%;
-    color: white;
-    
+}
+.logo {
+    grid-column: 1/2;
+}
+.links {
+    /* grid-column: 3/4; */
+    justify-self: end; 
+    font-size: 42px;
+    grid-column: 3/4;
 }
 
-.links{
-text-decoration: none;
-    grid-column: 2/3;
-    justify-self: end; 
+.links a {
+    color: white;
+    text-decoration: none;
+
 }
+
+.logo {
+    grid-column: 2/3;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.images {
+    grid-column: span 3;
+    width: 50%;
+    justify-self: center;
+    padding: 10px;
+    background-color: black;
+    margin: auto;
+    box-shadow: 1px 1px 10px 5px white;
+}
+
+.thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.thumbs li{
+    width: 20%;
+    padding: 10px;
+    background-color: black;
+    margin: 1%;
+    box-shadow: 1px 1px 10px 5px white;
+}
+
+.thumbs li img{
+    width: 100%;
+}
+
+section {
+    grid-column: spand 3;
+    grid-row: 2/3;
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50vh auto;
+    grid-gap: 30px;
+    background-color: black;
+}
+
+section img {
+    width: 80%;
+    height: 80%;
+}
+
