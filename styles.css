@@ -1,3 +1,9 @@
+@font-face {
+    font-family: roboto;
+    src: url(static/RobotoMono-Medium.ttf);
+}
+ 
+ 
  html {
     background-image: url(/images/background.png);
     background-repeat: no-repeat;
@@ -13,7 +19,6 @@ body {
     grid-column: 1/2;
 }
 .links {
-    /* grid-column: 3/4; */
     justify-self: end; 
     font-size: 42px;
     grid-column: 3/4;
@@ -66,7 +71,7 @@ ul {
 section {
     grid-column: spand 3;
     grid-row: 2/3;
-    width: 80%;
+    width: 60%;
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -76,7 +81,17 @@ section {
 }
 
 section img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
 }
 
+p {
+color: azure;
+background-color:black;
+display: grid;
+justify-content: left;
+}
+
+h1 {
+color: azure;
+}
