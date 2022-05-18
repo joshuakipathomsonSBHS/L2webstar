@@ -1,3 +1,9 @@
+@font-face {
+    font-family: roboto;
+    src: url(static/RobotoMono-Medium.ttf);
+}
+ 
+ 
  html {
     background-image: url(/images/background.png);
     background-repeat: no-repeat;
@@ -6,21 +12,86 @@
 
 body {
     display: grid;
-    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-rows: auto;
+}
+.logo {
+    grid-column: 1/2;
+}
+.links {
+    justify-self: end; 
+    font-size: 42px;
+    grid-column: 3/4;
 }
 
-.links {
+.links a {
+    color: white;
     text-decoration: none;
-    grid-column: 3/4;
-    justify-self: end; 
-    font-size: 42px
-    
+
+}
+
+.logo {
+    grid-column: 2/3;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.images {
+    grid-column: span 3;
+    width: 50%;
+    justify-self: center;
+    padding: 10px;
+    background-color: black;
+    margin: auto;
+    box-shadow: 1px 1px 10px 5px white;
+}
+
+.thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.thumbs li{
+    width: 20%;
+    padding: 10px;
+    background-color: black;
+    margin: 1%;
+    box-shadow: 1px 1px 10px 5px white;
+}
+
+.thumbs li img{
+    width: 100%;
 }
 
 section {
-    grid-column: 1/4;
+    grid-column: spand 3;
+    grid-row: 2/3;
+    width: 60%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50vh auto;
+    grid-gap: 30px;
     background-color: black;
-    justify-content: center;
+}
+
+section img {
+    width: 70%;
+    height: 70%;
+}
+
+p {
+color: azure;
+background-color:black;
+display: grid;
+justify-content: left;
+}
+
+h1 {
+color: azure;
 }
